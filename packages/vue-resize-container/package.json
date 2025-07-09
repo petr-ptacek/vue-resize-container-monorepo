@@ -1,0 +1,73 @@
+{
+  "name": "@petr-ptacek/vue-resize-container",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Vue 3 component for observing resizing sections at container.",
+  "author": {
+    "name": "Petr Ptáček",
+    "email": "petr.ptacek99@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petr-ptacek/vue-resize-container-monorepo.git",
+    "directory": "packages/vue-resize-container"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue3",
+    "resize",
+    "container",
+    "sections",
+    "expand",
+    "collapse"
+  ],
+  "main": "./dist/vue-resize-container.umd.js",
+  "module": "./dist/vue-resize-container.es.js",
+  "types": "./dist/index.d.ts",
+  "style": "./dist/vue-resize-container.css",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-resize-container.es.js",
+      "require": "./dist/vue-resize-container.umd.js"
+    },
+    "./style.css": "./dist/vue-resize-container.css"
+  },
+  "sideEffects": [
+    "./dist/vue-resize-container.css"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "clear": "rimraf dist",
+    "prebuild": "pnpm run type-check && pnpm run lint",
+    "build": "vite build && pnpm run build:types",
+    "build:types": "vue-tsc -p ./tsconfig.build.json",
+    "type-check": "vue-tsc --noEmit -p ./tsconfig.app.json",
+    "type-check:watch": "vue-tsc --noEmit -p ./tsconfig.app.json --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "stylelint": "stylelint \"**/*.{css,vue}\"",
+    "stylelint:fix": "stylelint \"**/*.{css,vue}\" --fix"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^7.0.0",
+    "vue-tsc": "^3.0.1"
+  },
+  "dependencies": {
+    "@vueuse/core": "^13.5.0"
+  }
+}

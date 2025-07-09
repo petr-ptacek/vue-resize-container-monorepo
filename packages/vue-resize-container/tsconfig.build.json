@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "@vue/tsconfig/tsconfig.dom.json",
+    "@vue/tsconfig/tsconfig.lib.json",
+    "../../tsconfig.rules.json"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "noEmit": false,
+    "skipLibCheck": true,
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": [
+    "src"
+  ]
+}
