@@ -55,9 +55,7 @@
     "type-check": "vue-tsc --noEmit -p ./tsconfig.app.json",
     "type-check:watch": "vue-tsc --noEmit -p ./tsconfig.app.json --watch",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "stylelint": "stylelint \"**/*.{css,vue}\"",
-    "stylelint:fix": "stylelint \"**/*.{css,vue}\" --fix"
+    "lint:fix": "eslint . --fix"
   },
   "peerDependencies": {
     "vue": "^3.3.0"
