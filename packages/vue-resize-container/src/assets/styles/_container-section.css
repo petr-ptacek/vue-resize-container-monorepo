@@ -1,9 +1,13 @@
 .vue-resize-container-section {
-  width: 100%;
-  height: 100%;
   overflow: auto;
 
-  & > * {
+  &,
+  & > .vue-resize-container-section__content {
+    height: 100%;
+    width: 100%;
+  }
+
+  & > .vue-resize-container-section__content > * {
     height: 100%;
     width: 100%;
   }

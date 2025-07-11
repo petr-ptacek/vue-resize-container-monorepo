@@ -23,7 +23,7 @@ const tsProjects = globSync("**/tsconfig.eslint.json", {
 
 export default defineConfig([
   {
-    ignores: ["dist/**", "node_modules/**", "package-lock.json", "pnpm-lock.yaml", "coverage/**"],
+    ignores: ["dist/**", "node_modules/**", "coverage/**", "packages/vue-resize-container/dist/**"],
   },
   // JS/TS/Vue soubory (obecná nastavení)
   {

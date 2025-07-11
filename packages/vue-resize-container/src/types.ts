@@ -15,10 +15,10 @@ export type OriginValue = "alpha" | "beta";
 export type DirectionValue = "horizontal" | "vertical";
 
 export type DefaultSettings = Required<
-  Pick<AppResizeContainerProps, "origin" | "direction" | "initialSize" | "storageKey">
+  Pick<ResizeContainerProps, "origin" | "direction" | "initialSize" | "storageKey">
 >;
 
-export type AppResizeContainerProps = {
+export type ResizeContainerProps = {
   direction?: DirectionValue;
   origin?: OriginValue;
   storageKey?: string;

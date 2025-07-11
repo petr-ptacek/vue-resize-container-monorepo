@@ -11,13 +11,11 @@ const createConfig = (): UserConfig => {
   return {
     plugins: [vue()],
     build: {
+      emptyOutDir: false,
+      outDir: "dist",
       // cssCodeSplit: true,
       lib: {
         cssFileName: "vue-resize-container",
-        // entry: {
-        //   index: fileURLToPath(new URL("./src/index.ts", import.meta.url)),
-        //   style: fileURLToPath(new URL("./src/assets/styles/style.css", import.meta.url))
-        // },
         entry: resolve(__dirname, "./src/index.ts"),
         name: "VueResizeContainer",
         formats: ["es", "umd"],
@@ -42,16 +40,8 @@ const createConfig = (): UserConfig => {
   };
 };
 
-export default defineConfig(({ command }) => {
-  const config: UserConfig = createConfig();
-
-  switch (command) {
-    case "build":
-      config.build = undefined;
-      break;
-  }
-
-  return config;
+export default defineConfig(() => {
+  return createConfig();
 });
 
 // https://vite.dev/config/

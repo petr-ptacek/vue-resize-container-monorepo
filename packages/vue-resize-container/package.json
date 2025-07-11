@@ -41,13 +41,21 @@
   "sideEffects": [
     "./dist/vue-resize-container.css"
   ],
+  "typesVersions": {
+    "*": {
+      "*": [
+        "dist/*"
+      ]
+    }
+  },
   "files": [
     "dist",
     "README.md",
     "LICENSE.md"
   ],
   "scripts": {
-    "dev": "vite",
+    "predev": "npm run clear & npm run build",
+    "dev": "concurrently -n vite,types -c blue,magenta \"vite build --watch\" \"vue-tsc -p ./tsconfig.build.json --watch\"",
     "clear": "rimraf dist",
     "prebuild": "pnpm run type-check && pnpm run lint",
     "build": "vite build && pnpm run build:types",

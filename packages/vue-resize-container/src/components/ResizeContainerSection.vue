@@ -1,5 +1,7 @@
 <template>
   <div class="vue-resize-container-section">
-    <slot />
+    <div class="vue-resize-container-section__content">
+      <slot />
+    </div>
   </div>
 </template>

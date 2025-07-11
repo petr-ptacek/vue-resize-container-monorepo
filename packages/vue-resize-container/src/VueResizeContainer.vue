@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import { ButtonsBox } from "./components";
-import type { AppResizeContainerProps } from "./types";
+import type { ResizeContainerProps } from "./types";
 import { useResizer } from "./use";
 
 const {
   origin = "alpha",
   direction = "horizontal",
   initialSize = ["50%", "50%"],
-} = defineProps<AppResizeContainerProps>();
+} = defineProps<ResizeContainerProps>();
 
 // const storageData = useStorage(storageKey);
 
