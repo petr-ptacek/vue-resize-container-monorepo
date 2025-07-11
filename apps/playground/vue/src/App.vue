@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import {
-  // type ResizeContainerProps,
+  type ResizeContainerProps,
   VueResizeContainer,
   VueResizeContainerSection,
 } from "@petr-ptacek/vue-resize-container";
 
-// const _props: ResizeContainerProps = {
-//   direction: "horizontal",
-// };
+const _props: ResizeContainerProps = {
+  direction: "horizontal",
+};
 </script>
 
 <template>
   <div style="width: 100%; height: 100vh">
-    <VueResizeContainer>
+    <VueResizeContainer v-bind="_props">
       <template #sectionAlpha>
         <VueResizeContainerSection>
           <div class="section alpha">
