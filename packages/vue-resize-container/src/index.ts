@@ -1,14 +1,11 @@
+import("./assets/styles/main.css");
 import {
-  ResizeContainerSection as VueResizeContainerSection,
-  IconExpand as VueIconExpand,
   IconCollapse as VueIconCollapse,
+  IconExpand as VueIconExpand,
+  ResizeContainerSection as VueResizeContainerSection,
 } from "./components";
 import VueResizeContainer from "./VueResizeContainer.vue";
 
 export * from "./types";
 
 export { VueResizeContainer, VueResizeContainerSection, VueIconExpand, VueIconCollapse };
-
-if (import.meta.env.PROD) {
-  import("./assets/styles/main.css");
-}

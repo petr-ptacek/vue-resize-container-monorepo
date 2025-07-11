@@ -65,7 +65,7 @@ export function useResizer(options: UseResizerOptions) {
     betaSizeState.setSize(`${betaSizeState.sizePercentage.value}%`);
   }
 
-  function expand() {
+  function doExpand() {
     if (isCollapsed.value) {
       return void setCollapsed(false);
     }
@@ -73,7 +73,7 @@ export function useResizer(options: UseResizerOptions) {
     setExpanded(!isExpanded.value);
   }
 
-  function collapse() {
+  function doCollapse() {
     if (isExpanded.value) {
       return void setExpanded(false);
     }
@@ -85,8 +85,8 @@ export function useResizer(options: UseResizerOptions) {
     resizerMouseDownHandler,
     resizerMouseEnterHandler,
     resizerMouseLeaveHandler,
-    expand,
-    collapse,
+    doExpand,
+    doCollapse,
 
     isResizing,
     isResizerHover,

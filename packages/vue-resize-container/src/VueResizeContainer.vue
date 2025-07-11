@@ -15,8 +15,8 @@ const {
   resizerMouseDownHandler,
   resizerMouseEnterHandler,
   resizerMouseLeaveHandler,
-  collapse,
-  expand,
+  doCollapse,
+  doExpand,
   alphaStateSize,
   betaStateSize,
   isResizerHover,
@@ -70,8 +70,8 @@ defineSlots<{
           <div class="vue-resize-container-resizer__inner">
             <div class="vue-resize-container-resizer__buttons">
               <ButtonsBox
-                @expand="expand"
-                @collapse="collapse"
+                @expand="doExpand"
+                @collapse="doCollapse"
               >
                 <template #iconExpand>
                   <slot name="buttonIconExpand" />
