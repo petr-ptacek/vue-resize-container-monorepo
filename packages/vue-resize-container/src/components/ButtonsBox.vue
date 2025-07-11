@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import ButtonBase from "./ButtonBase.vue";
-import IconCollapse from "./IconCollapse.vue";
-import IconExpand from "./IconExpand.vue";
+import IconCollapse from "./IconShevronLeft.vue";
+import IconExpand from "./IconShevronRight.vue";
 
 const emit = defineEmits<{
   expand: [MouseEvent];
