@@ -7,6 +7,7 @@ import {
 
 const _props: ResizeContainerProps = {
   direction: "horizontal",
+  origin: "alpha",
 };
 </script>
 
