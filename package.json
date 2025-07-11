@@ -18,7 +18,7 @@
     "lint": "eslint . && pnpm -r lint",
     "lint:fix": "eslint . --fix && pnpm -r lint:fix",
     "type-check": "pnpm -r --filter ./packages type-check",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --fix"
