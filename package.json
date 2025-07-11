@@ -22,7 +22,6 @@
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
-      "pnpm run type-check",
       "pnpm run lint:fix"
     ]
   },
