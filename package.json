@@ -3,10 +3,6 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-  "workspaces": [
-    "packages/**",
-    "apps/**"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/petr-ptacek/vue-resize-container-monorepo.git"
