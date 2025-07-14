@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "type": "module",
   "workspaces": [
-    "packages/*",
-    "apps/*"
+    "packages/**",
+    "apps/**"
   ],
   "repository": {
     "type": "git",

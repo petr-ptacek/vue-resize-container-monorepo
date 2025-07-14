@@ -1,5 +1,5 @@
 echo "Running pre-push hook"
-pnpm exec type-check
+pnpm run type-check
 
 if [ $? -ne 0 ]; then
   echo "❌ Type-check failed. Push aborted."
