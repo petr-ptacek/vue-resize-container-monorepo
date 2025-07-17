@@ -23,9 +23,9 @@ function emitCollapse(e: MouseEvent): void {
 </script>
 
 <template>
-  <div class="vue-resize-container-buttons">
+  <div class="vue-resize-container-buttons-box">
     <ButtonBase
-      class="vue-resize-container-buttons__button"
+      class="vue-resize-container-buttons-box__button"
       data-action="expand"
       @click="emitExpand"
     >
@@ -34,9 +34,9 @@ function emitCollapse(e: MouseEvent): void {
       </slot>
     </ButtonBase>
 
-    <div class="vue-resize-container-buttons__splitter"></div>
+    <div class="vue-resize-container-buttons-box__splitter"></div>
     <ButtonBase
-      class="vue-resize-container-buttons__button"
+      class="vue-resize-container-buttons-box__button"
       data-action="collapse"
       @click="emitCollapse"
     >

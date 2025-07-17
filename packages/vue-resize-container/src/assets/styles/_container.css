@@ -34,7 +34,7 @@
     flex-direction: row;
   }
 
-  .vue-resize-container-buttons {
+  .vue-resize-container-buttons-box {
     transform: translateY(var(--vue-rc-buttons-translate));
     top: var(--vue-rc-buttons-offset);
     flex-direction: column;
@@ -56,11 +56,11 @@
   }
 
   &[data-origin="alpha"] {
-    .vue-resize-container-buttons {
+    .vue-resize-container-buttons-box {
       left: 100%;
       transition: left var(--vue-rc-resizer-transition-duration);
 
-      .vue-resize-container-buttons__button {
+      .vue-resize-container-buttons-box__button {
         &[data-action="expand"] {
           border-top-right-radius: var(--vue-rc-button-border-radius);
         }
@@ -80,19 +80,19 @@
 
   &.is-expanded {
     &[data-origin="alpha"] {
-      .vue-resize-container-buttons {
+      .vue-resize-container-buttons-box {
         left: unset;
         right: 100%;
         transition: right var(--vue-rc-resizer-transition-duration);
 
-        .vue-resize-container-buttons__button {
+        .vue-resize-container-buttons-box__button {
           &[data-action="expand"] {
             border-radius: 0;
             border-top-left-radius: var(--vue-rc-button-border-radius);
           }
         }
 
-        .vue-resize-container-buttons__button {
+        .vue-resize-container-buttons-box__button {
           &[data-action="collapse"] {
             border-radius: 0;
             border-bottom-left-radius: var(--vue-rc-button-border-radius);
@@ -117,7 +117,7 @@
     height: var(--vue-rc-resizer-size);
   }
 
-  .vue-resize-container-buttons {
+  .vue-resize-container-buttons-box {
     left: var(--vue-rc-buttons-offset);
     transform: translateX(var(--vue-rc-buttons-translate));
     flex-direction: row;
@@ -146,10 +146,10 @@
    */
 
   &[data-origin="alpha"] {
-    .vue-resize-container-buttons {
+    .vue-resize-container-buttons-box {
       top: 100%;
 
-      .vue-resize-container-buttons__button {
+      .vue-resize-container-buttons-box__button {
         &[data-action="expand"] {
           border-radius: 0;
           border-bottom-left-radius: var(--vue-rc-button-border-radius);
@@ -176,10 +176,10 @@
    */
 
   &[data-origin="beta"] {
-    .vue-resize-container-buttons {
+    .vue-resize-container-buttons-box {
       bottom: 100%;
 
-      .vue-resize-container-buttons__button {
+      .vue-resize-container-buttons-box__button {
 
         &[data-action="expand"] {
           border-radius: 0;
