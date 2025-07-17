@@ -51,7 +51,7 @@ defineSlots<{
   >
     <div
       ref="container"
-      class="vue-resize-container__container"
+      class="vue-resize-container__content"
     >
       <div
         ref="sectionAlpha"

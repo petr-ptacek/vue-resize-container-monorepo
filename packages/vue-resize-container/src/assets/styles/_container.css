@@ -3,7 +3,7 @@
   width: 100%;
   height: 100%;
 
-  .vue-resize-container__container {
+  .vue-resize-container__content {
     width: 100%;
     height: 100%;
     display: flex;
@@ -30,7 +30,7 @@
  *HORIZONTAL FROM LEFT TO RIGHT
 ********************************/
 .vue-resize-container[data-direction="horizontal"] {
-  .vue-resize-container__container {
+  .vue-resize-container__content {
     flex-direction: row;
   }
 
@@ -108,7 +108,7 @@
  *VERTICAL FROM TOP TO BOTTOM
  ********************************/
 .vue-resize-container[data-direction="vertical"] {
-  .vue-resize-container__container {
+  .vue-resize-container__content {
     flex-direction: column;
   }
 
